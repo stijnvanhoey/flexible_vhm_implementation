@@ -63,3 +63,9 @@ An application of the model to the Nete catchment, provides following model outp
 
     * When the antecedent rainfall concept, describing the concept of infiltration excess is not included:
     ![noante](vhm_fractions_example_noante.png)
+
+When interested to explore the possibility of converting the VHM approach into a numerically-improved model, please start with having a look at *test_odespy_vhm.ipynb* in which I quickly showcase how the usage of [odespy](https://github.com/hplgit/odespy) provides a possibility of doing so. 
+
+However, when interested in ODE-style implementation of lumped hydrological models, please check [FUSE](http://jasper.eng.uci.edu/pdf/39.pdf). The model was reimplemented in Python by myself, see at https://github.ugent.be/pages/biomath/pyFUSE. This implementation also extends FUSE to fit NAM and PDM model structures. Integration is covered by scipy and odespy solvers.
+
+For R-users, a wrapper of FUSE is available [here](https://github.com/ICHydro/r_fuse).
